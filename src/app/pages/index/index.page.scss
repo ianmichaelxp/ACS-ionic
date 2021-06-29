@@ -1,0 +1,18 @@
+
+.toolbar {
+  --background: #8EC64B ;
+  color: #fff;
+}
+
+ion-content {
+  --background: linear-gradient(#8EC64B, #6AAEDC);
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  width: 75%;
+  margin: 0 auto;
+}

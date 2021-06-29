@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Ficha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.numeroOS" placeholder="Nº OS"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.nomeCliente" placeholder="Nome do cliente"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.vendedor" placeholder="Nome do vendedor"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.tipoServico" placeholder="Tipo do serviço"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Material conferido</ion-label>
+      <ion-select multiple="true" [(ngModel)]="record.materialConferido" [value]="record.materialConferido">
+        <ion-select-option value="qualidade">Qualidade</ion-select-option>
+        <ion-select-option value="quantidade">Quantidade</ion-select-option>
+        <ion-select-option value="embalagem">Embalagem</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.ferramentasExecucao" placeholder="Ferramentas de execução"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.horaSaida" placeholder="Hora de saída"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.horaChegada" placeholder="Hora de chegada"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Concluído?</ion-label>
+      <ion-select [(ngModel)]="record.concluida" [value]="record.concluida">
+        <ion-select-option value="sim">Sim</ion-select-option>
+        <ion-select-option value="nao">Não</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="record.observacoes" placeholder="Observações"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="saveRecord()" expand="block">
+      {{recordId ? "Editar ficha" : "Cadastrar ficha"}}
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

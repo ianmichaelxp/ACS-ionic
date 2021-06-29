@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-title routerLink="/index" style="font-weight: bold;">Olá, seja bem-vindo</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="container">
+    <img src="/assets/img/ALPHA-LOGO-OFICIAL-BRANCO.svg" alt="">
+    <ion-button  routerLink="/details" class="ion-margin-top" color="light" expand="block" shape="round">
+      CADASTRAR FICHA
+    </ion-button>
+
+    <ion-button  routerLink="/home" class="ion-margin-top" color="light" expand="block" shape="round">
+      VISUALIZAR FICHAS
+    </ion-button>
+
+    <ion-button (click)="logout()" class="ion-margin-top" color="light" expand="block" shape="round">
+      SAIR
+    </ion-button>
+  </div>
+
+</ion-content>

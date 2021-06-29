@@ -1,0 +1,29 @@
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60%;
+  width: 75%;
+  margin: 0 auto;
+}
+ion-content {
+  --background: linear-gradient(#8EC64B, #6AAEDC);
+}
+
+ion-slides {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+ion-item{
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+
